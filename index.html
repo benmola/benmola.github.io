@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        .sidebar {
+            position: fixed;
+            top: 60px; /* Matches navbar height */
+            left: 0;
+            width: 25%;
+            height: calc(100vh - 60px);
+            overflow-y: auto;
+        }
+
+        .main-content {
+            margin-left: 25%;
+            padding: 2rem;
+        }
+
+        @media (max-width: 992px) {
+            .sidebar {
+                position: static;
+                width: 100%;
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+        }
         :root {
             --primary: #2c3e50;
             --secondary: #42b883;
@@ -61,6 +85,7 @@
             }
         }
     </style>
+    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -81,7 +106,7 @@
         </div>
     </nav>
 
-    <div class="container mt-5">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3 sidebar">
                 <div class="text-center">
@@ -106,7 +131,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-9">
+            <div class="col-lg-9 main-content">
                 <section id="about" class="mb-5">
                     <h2 class="section-title">About Me</h2>
                     <p>Enthusiast about Research in Science & Engineering and Data-Driven Innovations in Bioenergy Industry. Currently working on advancing bioenergy process optimization through digitalization and Industry 4.0 technologies.</p>
@@ -130,7 +155,7 @@ impact in the design of experiments, real-time control, and model-based process 
                     <div class="experience-item">
                         <h4>Research Support State Engineer</h4>
                         <h5>Research Center in Industrial Technologies (CRTI), Algiers, Algeria <span class="text-muted">· May 2017 - June 2019</span></h5>
-                        <p>Conceptualizing and realizing drones, supervising trainees/Master students in the field.</p>
+                        <p>Research support state engineer responsible for conceptualizing and realizing drones, as well as supervising trainees/Master students in the field.</p>
                     </div>
                     <div class="experience-item">
                         <h4>Trainee Automation Engineer</h4>
@@ -248,7 +273,8 @@ impact in the design of experiments, real-time control, and model-based process 
                         <div class="col-md-4">
                             <h5>Languages</h5>
                             <ul class="list-unstyled">
-                                <li>French (Native)</li>
+                                <li>Arabic (Native)</li>
+                                <li>French (Fluent)</li>
                                 <li>English (Fluent)</li>
                             </ul>
                         </div>
