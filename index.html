@@ -1,93 +1,131 @@
 <!DOCTYPE html>
-<html lang="en" class=" js ">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="HandheldFriendly" content="true">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Benaissa Dekhici</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://use.fontawesome.com/809c2bfca6.js"></script>
-
-  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
-  <!-- Academicons CSS link -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benaissa Dekhici - Research & Engineering</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #42b883;
+            --accent: #3498db;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--primary);
+        }
+        .navbar {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+        }
+        .sidebar {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .avatar img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10%;
+            margin-bottom: 1rem;
+        }
+        .social-icons a {
+            color: var(--primary);
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+        }
+        .section-title {
+            color: var(--secondary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+        .experience-item {
+            margin: 1.5rem 0;
+        }
+        .publication-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                margin-top: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<header>
-    <div class="wrapper">
-      <div class="sidebar">
-        <div class="bio">
-          <div class="avatar">
-            <img src="photo3.png" alt="">
-          </div>
-          <div class="title">
-            <h1>Benaissa Dekhici</h1>
-          </div>
-
-          <div class="desc">
-            <p>⦿ Enthusiast about Research in Science & Engineering and Data-Driven Innovations in Bioenergy Industry. </p>
-          </div>
-
-
-
-    <div class="social">
-            <ul>
-              <li><a href="https://github.com/benmola"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/benaissa-dekhici"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-              <li><a href="https://twitter.com/@BENMOLA10"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.researchgate.net/profile/Benaissa-Dekhici"><i class="ai ai-researchgate-square ai-fw" aria-hidden="true"></i></a></li>
-              <li><a href="https://scholar.google.com/citations?user=Benaissa%20Dekhici&user=ELEdK98AAAAJ"><i class="ai ai-google-scholar-square ai-fw" aria-hidden="true"></i></a></li>
-              <li><a href="https://orcid.org/0000-0002-2660-1029"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i></a></li>
-            </ul>
-          </div>
-
-
-          <div class="desc">
-            <ul class="email-list">
-              <li><a href="mailto:b.dekhici@surrey.ac.uk"><i class="fa fa-envelope"></i> b.dekhici@surrey.ac.uk</a></li>
-              <li><a href="mailto:benaissa.dekhici@univ-tlemcen.dz"><i class="fa fa-envelope"></i> benaissa.dekhici@univ-tlemcen.dz</a></li>
-            </ul>
-          </div>
-          <div class="desc">
-            <a href="BENAISSA_DEKHICI_CV_Updated.pdf" download="BENAISSA_DEKHICI_CV_Updated.pdf" class="download-btn fancy-button"><i class="fa fa-download"></i> Download CV</a>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Benaissa Dekhici</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
 
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3 sidebar">
+                <div class="text-center">
+                    <div class="avatar">
+                        <img src="photo3.png" alt="Benaissa Dekhici">
+                    </div>
+                    <h3 class="mt-3">Benaissa Dekhici</h3>
+                    <p class="text-muted">Researcher in Bioenergy & Data-Driven Innovations</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/benmola"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/benaissa-dekhici"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/@BENMOLA10"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.researchgate.net/profile/Benaissa-Dekhici"><i class="ai ai-researchgate"></i></a>
+                        <a href="https://scholar.google.com/citations?user=ELEdK98AAAAJ"><i class="ai ai-google-scholar"></i></a>
+                        <a href="https://orcid.org/0000-0002-2660-1029"><i class="ai ai-orcid"></i></a>
+                    </div>
+                    <div class="mt-3">
+                        <a href="mailto:b.dekhici@surrey.ac.uk" class="text-muted"><i class="fas fa-envelope"></i> Surrey Email</a><br>
+                        <a href="mailto:benaissa.dekhici@univ-tlemcen.dz" class="text-muted"><i class="fas fa-envelope"></i> UTL Email</a>
+                    </div>
+                    <a href="BENAISSA_DEKHICI_CV_Updated.pdf" class="btn btn-outline-secondary mt-3 w-100">Download CV</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <section id="about" class="mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <p>Enthusiast about Research in Science & Engineering and Data-Driven Innovations in Bioenergy Industry. Currently working on advancing bioenergy process optimization through digitalization and Industry 4.0 technologies.</p>
+                </section>
 
-
-      <div class="content-wrapper">
-          <div class="content">
-
-              
-
-
-              
-
-
-            <div class="title">
-              <i class="fa fa-briefcase" aria-hidden="true"></i>
-              <h2>EXPERIENCE</h2>
-
-              <h2>Work Experience</h2>
-               <div class="item">
-                <h3> PDRA in Bioenergy Process Optimisation and Control, England,
-The UK, <a href="https://www.surrey.ac.uk/">  University of Surrey</a>, England, UK. &emsp; <span>February, 2024 -  Present</span> </h3> 
-                <p> I form part of a large multi-disciplinary
+                <section id="experience" class="mb-5">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="experience-item">
+                        <h4>PDRA in Bioenergy Process Optimisation and Control</h4>
+                        <h5>University of Surrey <span class="text-muted">· Feb 2024 - Present</span></h5>
+                        <p>I form part of a large multi-disciplinary
 team developing advanced optimisation under uncertainty to rapidly transform the
 bioenergy industry into a data-driven, digitalized Industry 4.0 sector, to accelerate and
 enhance its contributions to a Net-Zero UK. The role is linked to the UKRI Supergen
 Bioenergy Impact Hub. In particular, this role will focus on developing a framework and
 digitalization roadmap to help companies embrace digital decision-making tools for rapid
-impact in the design of experiments, real-time control, and model-based process optimization.  </p>
-              </div>
-              <div class="item">
+impact in the design of experiments, real-time control, and model-based process optimization.</p>
+                    </div>
+                    <div class="item">
                 <h3>Research Support State Engineer, <a href="https://www.crti.dz/">  Research Center in Industrial Technologies -CRTI-</a>, Algiers, Algeria. &emsp; <span>May, 2017 -  June, 2019</span> </h3> 
                 <p>Research support state engineer responsible for conceptualizing and realizing drones, as well as supervising trainees/Master students in the field.  </p>
               </div>
@@ -138,54 +176,53 @@ impact in the design of experiments, real-time control, and model-based process 
 
               <div class="title">
               <i class="fa fa-book" aria-hidden="true"></i>
+                </section>
 
-            <h2>PUBLICATIONS</h2>
-              <div class="item">
-                 <p>Benaissa DEKHICI, <a href="https://doi.org/10.13140/RG.2.2.27352.26883">, Ph.D. Thesis: ”Data-Driven Modeling, Order Reduction and Control of Anaerobic Digestion Processes”,</a> <em> Jan 2024. </p>
-              </div>
-                
-            <div class="item">
-                 <p> Benaissa DEKHICI, Boumediene BENYAHIA, Brahim CHERKI, Luca FIORI, and Gianni ANDREOTTOLA, <a href="https://dl.acm.org/doi/10.1145/3680281"> ”Modeling of biogas production from hydrothermal carbonization products in a continuous anaerobic digester.”</a> <em> ACM Trans. Model. Comput. Simul. Just Accepted (July 2024).</p>
-              </div>
-              <div class="item">
+                <section id="publications" class="mb-5">
+                    <h2 class="section-title">Publications</h2>
+                    <div class="publication-item">
+                        <h5>ACM Trans. Model. Comput. Simul. (2024)</h5>
+                        <p>Modeling of biogas production from hydrothermal carbonization products in a continuous anaerobic digester</p>
+                        <a href="https://dl.acm.org/doi/10.1145/3680281" class="text-secondary">Read more</a>
+                    </div>
+                     <div class="publication-item">
                  <p> Benaissa DEKHICI, Boumediene BENYAHIA and Brahim CHERKI,  <a href="https://www.scientificbulletin.upb.ro/rev_docs_arhiva/rezec0_330715.pdf"> “DATA-DRIVEN CONTROL OF THE CHEMOSTAT USING THE KOOPMAN OPERATOR THEORY,”</a> <em> U.P.B. Sci. Bull., Series C, Vol. 85, Iss. 2,pp 137-150, 2023. </p>
               </div>
 
-              <div class="item">
+              <div class="publication-item">
                  <p> Benaissa DEKHICI, Boumediene BENYAHIA and Brahim CHERKI, <a href= "https://doi.org/10.1109/ICEEE59925.2023.00081">“Data-Driven Determination of the Governing Equations of the Continuously Stirred Tank Reactor”</a> <em> 2023 10th International Conference on Electrical and Electronics Engineering (ICEEE 2023), Istanbul, Turkey,  </em>, May 8-10, 2023. </p>
               </div>
 
-              <div class="item">
+              <div class="publication-item">
                  <p> Benaissa DEKHICI, Boumediene BENYAHIA and Brahim CHERKI, <a href="https://hal.science/hal-03696038">  “Dynamic Mode Decomposition with Control for Data-driven Modeling of Anaerobic Digestion Process,”</a> <em> 2022 16th African Conference on Research in Computer Science and Applied Mathematics (CARI ), Tunis, Tunisia,  </em>, October 04-07, 2022.</p>
               </div>
-              <div class="item">
+              <div class="publication-item">
                 <p> Benaissa DEKHICI, Boumediene BENYAHIA and Brahim CHERKI, <a href="https://ieeexplore.ieee.org/document/9638749"> “Forecast of chemostat dynamics using data-driven approach”</a> <em> 2021 International Conference on Control, Automation and Diagnosis (ICCAD), Grenoble, France,  pp. 1-6</em>, November. 3-5 2021. <a>doi: 10.1109/ICCAD52417.2021.9638749</a> </p>
               </div>
-              <div class="item">
+              <div class="publication-item">
                 <p> Benaissa DEKHICI, Boumediene BENYAHIA and Brahim CHERKI, <a href="https://hal.science/hal-02928872"> “Model order reduction using Dynamic Mode Decomposition: Application to the Anaerobic Digestion Model N.1 (ADM1)”</a> <em> 2020 15th African Conference on Research in Computer Science and Applied Mathematics (CARI ), Thi`es, Senegal</em>, October. 2020. </p>
               </div>
             </div>
 
               <div class="title">
               <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-              <h2>EDUCATION</h2>
-              <div class="item">
-                <h3>Ph.D. in Automatics <br> <a href="https://www.univ-tlemcen.dz/"> University of Tlemcen</a>, Tlemcen, Algeria, in co-direction with
-                <a href="https://www6.montpellier.inrae.fr/narbonne"> LBE-INRAE Narbonne </a>, France <span> &emsp; October, 2018 -  January 2024</span></h3>
-                <p> <a href="https://ft.univ-tlemcen.dz/pages/156/electrical-engineering-and-electronics-department">  Department of Electrical Engineering and Electronics </a>, <a href="https://ft.univ-tlemcen.dz/">  Faculty of Technology </a> . 
-                  <br> ⦿ Supervisors: <a href="https://www.researchgate.net/profile/Cherki-Brahim" > Prof. Cherki Brahim </a> and <a href="https://www.researchgate.net/profile/Benyahia-Boumediene-2"> Prof. Benyahia Boumediene. </a>  
-                  <br> ⦿  Thesis: Data-Driven Modeling, Order Reduction and Control of Anaerobic Digestion Processes. 
-                  <br> ⦿  Research topics: <em> Functional Analysis, Anaerobic Digestion, Bioprocesses, Mathematical Modeling, ADM1 Model, Chemostat, Koopman Operator Theory, Sparse Regression, Optimization, Data-Driven Modeling and Control, Model Predictive Control (MPC), Dynamic Mode Dycomposion (DMD), Sparse Identification of Nonlinear Dynamical Systems.</em> 
-                  <br> ⦿  Coursework: Nonlinear Dynamical Systems, Modeling and System Identification, Numerical Linear Algebra, Ordinary Differential Operators, Machine Learning, Bioprocesses, Biological Reactions, Technincal English, Methodology and Publication. </p>
-              </div>
-              <div class="item">
+                </section>
+
+                <section id="education" class="mb-5">
+                    <h2 class="section-title">Education</h2>
+                    <div class="experience-item">
+                        <h4>Ph.D. in Automatics</h4>
+                        <h5>University of Tlemcen & LBE-INRAE Narbonne <span class="text-muted">· 2018-2024</span></h5>
+                        <p>Data-Driven Modeling, Order Reduction and Control of Anaerobic Digestion Processes</p>
+                    </div>
+           <div class="experience-item">
                 <h3>MSc in in Automatics and Industrial Data Processing<br> <a href="https://www.univ-tlemcen.dz/"> University of Tlemcen </a>, &emsp; <span>September, 2013 -  June, 2015</span> </h3>
                 <p> <a href="https://ft.univ-tlemcen.dz/pages/156/electrical-engineering-and-electronics-department">  Department of Electrical Engineering and Electronics </a>, <a href="https://ft.univ-tlemcen.dz/">  Faculty of Technology </a>  <br> ⦿ Supervisors: <a href="https://www.researchgate.net/profile/Cherki-Brahim"> Prof.  Cherki Brahim </a> and <a href="https://scholar.google.com/citations?user=QaWi-zIAAAAJ&hl=fr"> Dr. Mokhtari Mohammed Rida. </a>
                 <br> ⦿ Thesis: "Commande d’un Quadrirotor Parrot Bebop Drone."
                 <br> ⦿ Coursework:  Embedded Systems, Statistics and Probability, PID control, Programing Languages, Mathematical Modeling, Ordinary Differential Operators, Linear and Nonlinear Dynamical Systems, Hybrid Dynamical Systems.
               </div>
 
-              <div class="item">
+              <div class="experience-item">
                 <h3>BSc. in Automatics <br> <a href="https://ft.univ-tlemcen.dz/"> University of Tlemcen </a> &emsp; <span>September, 2009 -  June, 2013</span> </h3>
                 <p> <a href="https://ft.univ-tlemcen.dz/pages/156/electrical-engineering-and-electronics-department">  Department of Electrical Engineering and Electronics </a>, <a href="https://ft.univ-tlemcen.dz/">  Faculty of Technology </a>.
                 <br> ⦿ Coursework: Linear Dynamical Systems, Control Theory, Microcontrollers, Algorithms and Data Structures, Object Oriented Programming.
@@ -194,50 +231,38 @@ impact in the design of experiments, real-time control, and model-based process 
 
               <div class="title">
               <i class="fa fa-github-square" aria-hidden="true"></i>
+              </section>
 
-            <h2>SKILLS</h2>
-
-                 <div class="item">
-                  <h3>⦿ MATLAB</h3>
-                  <p>Solve engineering problems using different Matlab and Simulink Toolboxes</p>
-              </div>
-
-              <div class="item">
-                  <h3>⦿ Python </h3>
-                  <p>Pandas, NumPy, SciPy, MatPlotLib, Keras, ...</p>
-              </div>
-
-              <div class="item">
-                 <h3>⦿  SQL </h3>
-                 <p>SQL Server, MySQL, PostgreSQL</p>
-              </div>
-
-              <div class="item">
-                 <h3>⦿  Excel</h3>
-                 <p>Conditional Formatting, Pivot Tables, ...</p>
-              </div>
-
-              <div class="item">
-                 <h3>⦿ Industrial Informatics </h3>
-                 <p>Simatic Step7 Siemens, Allen-Bradley, Schneider and thier programing languages LADDER and Grafset.</p>
-              </div>
-
-              <div class="item">
-                 <h3>⦿ Electricals </h3>
-                 <p>Electrical Machines and Transformers, Electrical Networks and Variable Speed Drives.</p>
-              </div>
-
-              <div class="item">
-                 <h3>⦿ Electronics </h3>
-                 <p>Circuit analysis, Digital and analogue electronics, Measurement techniques.</p>
-              </div>
-
+                <section id="skills" class="mb-5">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h5>Programming</h5>
+                            <ul class="list-unstyled">
+                                <li>MATLAB/Simulink</li>
+                                <li>Python (Pandas, NumPy)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Engineering</h5>
+                            <ul class="list-unstyled">
+                                <li>Industrial Automation</li>
+                                <li>Process Optimization</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Languages</h5>
+                            <ul class="list-unstyled">
+                                <li>French (Native)</li>
+                                <li>English (Fluent)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
-          </div>
-      </div>
-
+        </div>
     </div>
-</header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
