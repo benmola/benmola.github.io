@@ -11,11 +11,14 @@
     <style>
         .sidebar {
             position: fixed;
-            top: 60px; /* Matches navbar height */
+            top: 0;
             left: 0;
             width: 25%;
-            height: calc(100vh - 60px);
+            height: 100vh;
             overflow-y: auto;
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         .main-content {
@@ -27,295 +30,89 @@
             .sidebar {
                 position: static;
                 width: 100%;
+                height: auto;
             }
-            
             .main-content {
                 margin-left: 0;
             }
         }
-        :root {
-            --primary: #2c3e50;
-            --secondary: #42b883;
-            --accent: #3498db;
-            --background: #f4f4f9;
-            --text-color: #333;
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--background);
-            color: var(--text-color);
-        }
-        .navbar {
-            background: var(--primary);
-            color: white;
-            padding: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .sidebar {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-        .sidebar:hover {
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-        }
+
         .avatar img {
             width: 150px;
             height: 150px;
             object-fit: cover;
             border-radius: 50%;
             margin-bottom: 1rem;
-            transition: transform 0.3s ease;
         }
-        .avatar img:hover {
-            transform: scale(1.05);
-        }
+
         .social-icons a {
-            color: var(--primary);
+            color: #2c3e50;
             margin: 0 0.5rem;
             font-size: 1.5rem;
-            transition: color 0.3s ease;
         }
-        .social-icons a:hover {
-            color: var(--accent);
-        }
+
         .section-title {
-            color: var(--secondary);
-            border-bottom: 2px solid var(--accent);
+            color: #42b883;
+            border-bottom: 2px solid #3498db;
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
             font-weight: 700;
         }
-        .experience-item, .publication-item {
-            background: #fff;
-            padding: 1rem;
-            border-radius: 5px;
-            margin: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: box-shadow 0.3s ease;
-        }
-        .experience-item:hover, .publication-item:hover {
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-        }
-        @media (max-width: 768px) {
-            .sidebar {
-                margin-top: 2rem;
-            }
-        }
     </style>
-    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Benaissa Dekhici</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                </ul>
+    <div class="sidebar">
+        <div class="text-center">
+            <div class="avatar">
+                <img src="MyPhoto.png" alt="Benaissa Dekhici">
             </div>
+            <h3>Benaissa Dekhici</h3>
+            <p class="text-muted">Researcher in Bioenergy & Data-Driven Innovations</p>
+            <div class="social-icons">
+                <a href="https://github.com/benmola"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/benaissa-dekhici"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/@BENMOLA10"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.researchgate.net/profile/Benaissa-Dekhici"><i class="ai ai-researchgate"></i></a>
+                <a href="https://scholar.google.com/citations?user=ELEdK98AAAAJ"><i class="ai ai-google-scholar"></i></a>
+                <a href="https://orcid.org/0000-0002-2660-1029"><i class="ai ai-orcid"></i></a>
+            </div>
+            <div class="mt-3">
+                <a href="mailto:b.dekhici@surrey.ac.uk" class="text-muted"><i class="fas fa-envelope"></i> Surrey Email</a><br>
+                <a href="mailto:benaissa.dekhici@univ-tlemcen.dz" class="text-muted"><i class="fas fa-envelope"></i> UTL Email</a>
+            </div>
+            <a href="BENAISSA_DEKHICI_CV_Updated.pdf" class="btn btn-outline-secondary mt-3 w-100">Download CV</a>
         </div>
-    </nav>
+    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 sidebar">
-                <div class="text-center">
-                    <div class="avatar">
-                        <img src="MyPhoto.png" alt="Benaissa Dekhici">
-                    </div>
-                    <h3 class="mt-3">Benaissa Dekhici</h3>
-                    <p class="text-muted">Researcher in Bioenergy & Data-Driven Innovations</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/benmola"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/benaissa-dekhici"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/@BENMOLA10"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.researchgate.net/profile/Benaissa-Dekhici"><i class="ai ai-researchgate"></i></a>
-                        <a href="https://scholar.google.com/citations?user=ELEdK98AAAAJ"><i class="ai ai-google-scholar"></i></a>
-                        <a href="https://orcid.org/0000-0002-2660-1029"><i class="ai ai-orcid"></i></a>
-                    </div>
-                    <div class="mt-3">
-                        <a href="mailto:b.dekhici@surrey.ac.uk" class="text-muted"><i class="fas fa-envelope"></i> Surrey Email</a><br>
-                        <a href="mailto:benaissa.dekhici@univ-tlemcen.dz" class="text-muted"><i class="fas fa-envelope"></i> UTL Email</a>
-                    </div>
-                    <a href="BENAISSA_DEKHICI_CV_Updated.pdf" class="btn btn-outline-secondary mt-3 w-100">Download CV</a>
+    <div class="main-content">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">I am a passionate researcher in Bioenergy and Data-Driven Innovations, currently focusing on advancing bioenergy process optimization through digitalization and Industry 4.0 technologies. My work involves developing frameworks for data-driven decision making in bioenergy processes, contributing to the transition towards a Net-Zero future.</p>
                 </div>
-            </div>
-            
-            <div class="col-lg-9 main-content">
-                <section id="about" class="mb-5">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text">I am a passionate researcher in Bioenergy and Data-Driven Innovations, currently focusing on advancing bioenergy process optimization through digitalization and Industry 4.0 technologies. My work involves developing frameworks for data-driven decision making in bioenergy processes, contributing to the transition towards a Net-Zero future.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="experience" class="mb-5">
-                    <h2 class="section-title">Professional Journey</h2>
-                    <p class="lead mb-4">My career spans across research, teaching, and industry, with a focus on bioenergy optimization and automation technologies.</p>
-                    
-                    <h4 class="mt-4">Professional Experience</h4>
-                    <div class="experience-item">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h4>PDRA in Bioenergy Process Optimisation and Control</h4>
-                            <span class="badge bg-primary">Current</span>
-                        </div>
-                        <h5>University of Surrey <span class="text-muted">· Feb 2024 - Present</span></h5>
-                        <ul class="list-unstyled">
-                            <li><i class="fas fa-check-circle text-success me-2"></i>Developing optimization frameworks for bioenergy processes</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i>Creating digitalization roadmaps for Industry 4.0 implementation</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i>Collaborating with multi-disciplinary teams for Net-Zero initiatives</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h4>Research Support State Engineer</h4>
-                        <h5>Research Center in Industrial Technologies (CRTI), Algiers, Algeria <span class="text-muted">· May 2017 - June 2019</span></h5>
-                        <p>Research support state engineer responsible for conceptualizing and realizing drones, as well as supervising trainees/Master students in the field.</p>
-                    </div>
-                    <div class="experience-item">
-                        <h4>Trainee Automation Engineer</h4>
-                        <h5>LATAFNA Mill, Tlemcen, Algeria <span class="text-muted">· Sep 2016 - Oct 2016</span></h5>
-                        <p>Maintenance and supervision of different machines in the mill.</p>
-                    </div>
-
-                    <h4 class="mt-4">Teaching Experience</h4>
-                    <div class="experience-item">
-                        <h4>Teaching Assistant</h4>
-                        <h5>University of Tlemcen <span class="text-muted">· Sep 2020 - Jun 2021</span></h5>
-                        <p>Taught Optimal Control and Multivariable Linear Systems courses, prepared materials, and conducted exams.</p>
-                    </div>
-                    <div class="experience-item">
-                        <h4>Trainer/Teacher</h4>
-                        <h5>FORMAC Academy, Tlemcen <span class="text-muted">· Jun 2019 - Sep 2019</span></h5>
-                        <p>Formed students in Automatics and Industrial Data Processing fields.</p>
-                    </div>
-
-                    <h4 class="mt-4">Research Experience</h4>
-                    <div class="experience-item">
-                        <h4>Bilateral Student</h4>
-                        <h5>University of Trento, Italy <span class="text-muted">· Aug 2022 - Jul 2023</span></h5>
-                        <p>Worked on modeling biogas production from HTC products, co-authored paper submitted to ACM Transactions.</p>
-                    </div>
-                    <div class="experience-item">
-                        <h4>Erasmus+ Student</h4>
-                        <h5>University of Trento, Italy <span class="text-muted">· Aug 2021 - Jul 2022</span></h5>
-                        <p>Exchange program at Department of Civil, Environmental and Mechanical Engineering.</p>
-                    </div>
-                </section>
-
-                <section id="publications" class="mb-5">
-                    <h2 class="section-title">Research Contributions</h2>
-                    <p class="lead mb-4">My research focuses on data-driven modeling and optimization of bioenergy processes. Here are some of my key publications:</p>
-                    <div class="publication-item card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Ph.D. Thesis (2024)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Doctoral Research</h6>
-                            <p class="card-text">Data-Driven Modeling, Order Reduction and Control of Anaerobic Digestion Processes</p>
-                            <div class="mt-3">
-                                <a href="https://doi.org/10.13140/RG.2.2.27352.26883" class="btn btn-primary">View Thesis</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="publication-item">
-                        <h5>ACM Trans. Model. Comput. Simul. (2024)</h5>
-                        <p>Modeling of biogas production from hydrothermal carbonization products in a continuous anaerobic digester</p>
-                        <a href="https://dl.acm.org/doi/10.1145/3680281" class="text-secondary">Read more</a>
-                    </div>
-                    <div class="publication-item">
-                        <h5>U.P.B. Sci. Bull., Series C (2023)</h5>
-                        <p>DATA-DRIVEN CONTROL OF THE CHEMOSTAT USING THE KOOPMAN OPERATOR THEORY</p>
-                        <a href="https://www.scientificbulletin.upb.ro/rev_docs_arhiva/rezec0_330715.pdf" class="text-secondary">Read more</a>
-                    </div>
-                     <div class="publication-item">
-                <h5>2023 10th ICEEE</h5>
-                <p>Data-Driven Determination of the Governing Equations of the Continuously Stirred Tank Reactor</p>
-                <a href="https://doi.org/10.1109/ICEEE59925.2023.00081" class="text-secondary">Read more</a>
-            </div>
-            <div class="publication-item">
-                <h5>2022 CARI</h5>
-                <p>Dynamic Mode Decomposition with Control for Data-driven Modeling of Anaerobic Digestion Process</p>
-                <a href="https://hal.science/hal-03696038" class="text-secondary">Read more</a>
-            </div>
-            <div class="publication-item">
-                <h5>2021 ICCAD</h5>
-                <p>Forecast of chemostat dynamics using data-driven approach</p>
-                <a href="https://ieeexplore.ieee.org/document/9638749" class="text-secondary">Read more</a>
-            </div>
-            <div class="publication-item">
-                <h5>2020 CARI</h5>
-                <p>Model order reduction using Dynamic Mode Decomposition: Application to the Anaerobic Digestion Model N.1 (ADM1)</p>
-                <a href="https://hal.science/hal-02928872" class="text-secondary">Read more</a>
             </div>
         </section>
 
-                <section id="education" class="mb-5">
-                    <h2 class="section-title">Academic Background</h2>
-                    <p class="lead mb-4">My educational journey has equipped me with a strong foundation in automation, control systems, and bioenergy processes.</p>
-                    <div class="experience-item">
-                        <h4>Ph.D. in Automatics</h4>
-                        <h5>University of Tlemcen & LBE-INRAE Narbonne <span class="text-muted">· 2018-2024</span></h5>
-                        <p>Data-Driven Modeling, Order Reduction and Control of Anaerobic Digestion Processes</p>
-                        <ul>
-                            <li>Supervisors: Prof. Cherki Brahim and Prof. Benyahia Boumediene</li>
-                            <li>Coursework: Nonlinear Systems, Machine Learning, Bioprocesses</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h4>MSc in Automatics and Industrial Data Processing</h4>
-                        <h5>University of Tlemcen <span class="text-muted">· 2013-2015</span></h5>
-                        <p>Thesis: Commande d’un Quadrirotor Parrot Bebop Drone</p>
-                    </div>
-                    <div class="experience-item">
-                        <h4>BSc in Automatics</h4>
-                        <h5>University of Tlemcen <span class="text-muted">· 2009-2013</span></h5>
-                        <p>Focus on Control Theory and Electrical Systems</p>
-                    </div>
-                </section>
-
-                <section id="skills" class="mb-5">
-                    <h2 class="section-title">Technical Expertise</h2>
-                    <p class="lead mb-4">My skills span across programming, engineering, and languages, enabling me to tackle complex bioenergy challenges.</p>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h5>Programming</h5>
-                            <ul class="list-unstyled">
-                                <li>MATLAB/Simulink</li>
-                                <li>Python (Pandas, NumPy)</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Engineering</h5>
-                            <ul class="list-unstyled">
-                                <li>Industrial Automation</li>
-                                <li>Process Optimization</li>
-                                <li>Electrical Systems</li>
-                                <li>Embedded Systems</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Languages</h5>
-                            <ul class="list-unstyled">
-                                <li>Arabic (Native)</li>
-                                <li>French (Fluent)</li>
-                                <li>English (Fluent)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+        <section id="experience" class="mt-5">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h4>PDRA in Bioenergy Process Optimisation and Control</h4>
+                    <h5>University of Surrey <span class="text-muted">· Feb 2024 - Present</span></h5>
+                    <p>Developing optimization frameworks for bioenergy processes and creating digitalization roadmaps for Industry 4.0 implementation.</p>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section id="research" class="mt-5">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="card mt-3">
+                <div class="card-body">
+                    <p>My research focuses on data-driven modeling and optimization of bioenergy processes, particularly in anaerobic digestion and hydrothermal carbonization technologies.</p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
