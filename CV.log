@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.8)  27 JUL 2025 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.8)  27 JUL 2025 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -854,7 +854,8 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 24
 .
  (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (CV.aux)
+)
+No file CV.aux.
 \openout1 = `CV.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -953,15 +954,12 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 24.
-(CV.out) (CV.out)
 \@outlinefile=\write4
 \openout4 = `CV.out'.
 
-\pagenumberwidth=\skip103
 \makecvheaddetailsbox=\box115
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
 6.
-
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1018,11 +1016,11 @@ available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
 n input line 26.
 \makecvheadpicturebox=\box116
-\makecvheaddetailswidth=\skip104
-\makecvheadpicturewidth=\skip105
+\makecvheaddetailswidth=\skip103
+\makecvheadpicturewidth=\skip104
 \makecvheadnamebox=\box117
 
-Overfull \hbox (66.0961pt too wide) in paragraph at lines 26--26
+Overfull \hbox (40.60909pt too wide) in paragraph at lines 26--26
 [][]\T1/lmr/m/n/34 (-20) Benaissa[] []Dekhici[]  
  []
 
@@ -1050,15 +1048,22 @@ Overfull \hbox (0.99644pt too wide) in paragraph at lines 71--71
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-Package rerunfilecheck Info: File `CV.out' has not changed.
-(rerunfilecheck)             Checksum: CFD9DDA70611CC627C9511902C12FFC5;630.
+
+
+Package rerunfilecheck Warning: File `CV.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `CV.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  71ADF1D60B9468E9E8A29032C197B910;699.
  ) 
 Here is how much of TeX's memory you used:
- 26732 strings out of 476357
- 514213 string characters out of 5793067
+ 26710 strings out of 476357
+ 513721 string characters out of 5793067
  1960496 words of memory out of 5000000
- 48265 multiletter control sequences out of 15000+600000
- 630852 words of font info for 133 fonts, out of 8000000 for 9000
+ 48253 multiletter control sequences out of 15000+600000
+ 626329 words of font info for 130 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  129i,13n,129p,1001b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bd0022/AppData/Roaming/MiKTeX/fonts/type1/public/fontawesome5/FontA
@@ -1072,10 +1077,10 @@ g/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/bd0022/AppData/Roaming/MiKTe
 X/fonts/type1/public/lm/lmri10.pfb><C:/Users/bd0022/AppData/Roaming/MiKTeX/font
 s/type1/public/lm/lmro10.pfb><C:/Users/bd0022/AppData/Roaming/MiKTeX/fonts/type
 1/public/lm/lmro17.pfb>
-Output written on CV.pdf (2 pages, 274419 bytes).
+Output written on CV.pdf (2 pages, 273953 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
- 38973 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 36877 words of extra memory for PDF output out of 42996 (max. 10000000)
 
