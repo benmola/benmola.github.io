@@ -1,0 +1,27 @@
+{
+  "cv_sections": {
+    "about": true,
+    "experience": true,
+    "education": true,
+    "projects": true,
+    "publications": false,
+    "activities": false,
+    "skills": true,
+    "hobbies": true
+  },
+  "cv_settings": {
+    "max_projects": null,
+    "max_experience": null,
+    "max_publications": 5,
+    "max_activities": null,
+    "include_abstracts": false,
+    "projects_status_filter": null,
+    "activities_type_filter": null
+  },
+  "latex_settings": {
+    "document_class": "moderncv",
+    "style": "classic",
+    "color": "blue",
+    "geometry": "scale=0.8"
+  }
+}

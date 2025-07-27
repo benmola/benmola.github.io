@@ -1,0 +1,392 @@
+{
+  "personal": {
+    "name": {
+      "first": "Benaissa",
+      "last": "Dekhici"
+    },
+    "title": "Researcher in Bioenergy & Data-Driven Innovations",
+    "contact": {
+      "email_surrey": "b.dekhici@surrey.ac.uk",
+      "email_tlemcen": "benaissa.dekhici@univ-tlemcen.dz",
+      "phone": "+44 7414 294968",
+      "website": "https://benmola.github.io"
+    },
+    "social": {
+      "github": "https://github.com/benmola",
+      "linkedin": "https://www.linkedin.com/in/Benaissa-Dekhici",
+      "twitter": "https://twitter.com/@BENMOLA10",
+      "researchgate": "https://www.researchgate.net/profile/Benaissa-Dekhici",
+      "google_scholar": "https://scholar.google.com/citations?user=ELEdK98AAAAJ",
+      "orcid": "https://orcid.org/0000-0002-2660-1029"
+    },
+    "about": "I am a researcher in Bioenergy and Data-Driven Innovations, with a focus on the intersection of engineering, data science, and sustainable energy systems. My work involves developing advanced modeling, control, and data analytics solutions to address real-world challenges in bioenergy and environmental engineering. I am passionate about leveraging technology to drive progress in sustainability and create a positive impact on a global scale. Extensive travel experience having lived in Algeria, Italy, Turkey, and the UK, providing multicultural perspective and adaptability."
+  },
+  "education": [
+    {
+      "degree": "Ph.D. in Automatics",
+      "institution": "University of Tlemcen",
+      "location": "Tlemcen, Algeria",
+      "start_date": "2018",
+      "end_date": "2024",
+      "thesis": "Data-Driven Modeling, Order Reduction and Control of Anaerobic Digestion Processes",
+      "supervisors": ["Prof. Boumediene Benyahia", "Prof. Brahim Cherki"],
+      "co_direction": "LBE-INRAE Narbonne, France",
+      "mobility": [
+        "Bilateral Student at University of Trento (Aug 2022--Jul 2023)",
+        "International Credit Mobility Student at University of Trento (Aug 2021--Jul 2022)"
+      ]
+    },
+    {
+      "degree": "M.Sc. in Automatics and Industrial Data Processing",
+      "institution": "University of Tlemcen",
+      "location": "Tlemcen, Algeria",
+      "start_date": "2013",
+      "end_date": "2015",
+      "thesis": "Commande d'un Quadrirotor Parrot Bebop Drone",
+      "supervisors": ["Dr. Mokhtari Mohammed Rida", "Prof. Brahim Cherki"]
+    },
+    {
+      "degree": "B.Sc. in Automatics",
+      "institution": "University of Tlemcen",
+      "location": "Tlemcen, Algeria",
+      "start_date": "2009",
+      "end_date": "2013"
+    }
+  ],
+  "experience": [
+    {
+      "position": "PDRA in Bioenergy Process Optimisation and Control",
+      "organization": "University of Surrey",
+      "location": "England, UK",
+      "start_date": "Feb 2024",
+      "end_date": "Present",
+      "description": "Focusing on advanced optimisation under uncertainty for bioenergy industry digitalization. Linked to UKRI Supergen Bioenergy Impact Hub. Developing cutting-edge control strategies for sustainable energy systems.",
+      "responsibilities": [
+        "Focusing on advanced optimisation under uncertainty for bioenergy industry digitalization",
+        "Linked to UKRI Supergen Bioenergy Impact Hub",
+        "Developing cutting-edge control strategies for sustainable energy systems"
+      ]
+    },
+    {
+      "position": "Teaching Assistant",
+      "organization": "University of Tlemcen",
+      "location": "Tlemcen, Algeria",
+      "start_date": "Sept 2020",
+      "end_date": "Jun 2021",
+      "description": "Courses: Linear Multivariable Systems, Nonlinear Systems, Optimal Control",
+      "responsibilities": [
+        "Courses: Linear Multivariable Systems, Nonlinear Systems, Optimal Control",
+        "Supervised undergraduate and graduate students in advanced control theory"
+      ]
+    },
+    {
+      "position": "Teaching Assistant",
+      "organization": "University of Tlemcen",
+      "location": "Tlemcen, Algeria",
+      "start_date": "Sept 2019",
+      "end_date": "Jun 2020",
+      "description": "Courses: Multivariable Systems, Nonlinear Systems",
+      "responsibilities": [
+        "Courses: Multivariable Systems, Nonlinear Systems",
+        "Developed practical laboratory exercises and assessment materials"
+      ]
+    },
+    {
+      "position": "Trainer/Teacher",
+      "organization": "FROMAC Academy",
+      "location": "Tlemcen, Algeria",
+      "start_date": "Jun 2019",
+      "end_date": "Sept 2019",
+      "description": "Subject: Automatics and Industrial Data Processing",
+      "responsibilities": [
+        "Subject: Automatics and Industrial Data Processing",
+        "Delivered professional training programs to industry professionals"
+      ]
+    },
+    {
+      "position": "Research Support State Engineer",
+      "organization": "Research Center in Industrial Technologies, CRTI",
+      "location": "Algiers, Algeria",
+      "start_date": "May 2017",
+      "end_date": "Jun 2019",
+      "description": "Responsible for drone systems development (hardware and software)",
+      "responsibilities": [
+        "Responsible for drone systems development (hardware and software)",
+        "Led interdisciplinary teams in UAV technology advancement",
+        "Contributed to multiple research publications and technical reports"
+      ]
+    },
+    {
+      "position": "Trainee as Automation Engineer",
+      "organization": "LATAFNA Mill",
+      "location": "Tlemcen, Algeria",
+      "start_date": "Sept 2016",
+      "end_date": "Oct 2016",
+      "description": "Gained hands-on experience in industrial automation systems",
+      "responsibilities": [
+        "Gained hands-on experience in industrial automation systems",
+        "Worked on process control and optimization projects"
+      ]
+    },
+    {
+      "position": "Researcher",
+      "organization": "Tlemcen Automatics Laboratory LAT",
+      "location": "Tlemcen, Algeria",
+      "start_date": "Since 2018",
+      "end_date": "Present",
+      "description": "Active member contributing to laboratory research initiatives",
+      "responsibilities": [
+        "Active member contributing to laboratory research initiatives",
+        "Collaborating on national and international research projects"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Rapid Digitalisation of Bioenergy for Higher Efficiency and Profit",
+      "organization": "UKRI Supergen Bioenergy Impact Hub",
+      "start_date": "Feb 2024",
+      "end_date": "Present",
+      "description": "Developing advanced optimization frameworks to transform the bioenergy industry into a data-driven, digitalized Industry.",
+      "status": "ongoing"
+    },
+    {
+      "title": "Biomethane Islands – Feasibility Study",
+      "organization": "Future Energy Networks: Network Innovation Allowance",
+      "start_date": "Jan 2025",
+      "end_date": "Aug 2025",
+      "description": "Developed base simulation for mass and energy balance, cost estimation, designed small-scale pilot system, and delivered profitability assessment.",
+      "status": "completed"
+    },
+    {
+      "title": "D-Xpert: AI-Based Recommender System for Smart Energy Saving",
+      "organization": "Innovate UK Project",
+      "start_date": "Nov 2024",
+      "end_date": "Feb 2025",
+      "description": "Dynamic Heat Flow Model Development, HVAC Profiling, AI Occupancy Model, and Model Predictive Control Algorithm development.",
+      "status": "completed"
+    },
+    {
+      "title": "Integrating CFD Modeling and Kinetics for Enhanced Anaerobic Digestion",
+      "organization": "The Carbon Recycling Network Business Interaction Voucher",
+      "start_date": "Jul 2024",
+      "end_date": "Dec 2024",
+      "description": "Developed automated methodology integrating CFD with kinetic models and Bayesian Optimisation for optimizing anaerobic digester mixing systems.",
+      "status": "completed"
+    },
+    {
+      "title": "Techno-economic Analysis of Novel Water Treatment System",
+      "organization": "Consultancy with Intelligent Tomorrow Ltd",
+      "start_date": "Oct 2024",
+      "end_date": "Oct 2024",
+      "description": "Developed base simulation for mass and energy balance, cost estimation, designed pilot system, and delivered profitability assessment.",
+      "status": "completed"
+    }
+  ],
+  "publications": [
+  {
+    "title": "Data-Driven Modelling of Biogas Production Using Multi-Task Gaussian Processes",
+    "authors": ["Benaissa Dekhici"],
+    "venue": "Proceedings of the 35th European Symposium on Computer Aided Process Engineering (ESCAPE 35)",
+    "year": "2025",
+    "doi": "https://doi.org/10.69997/sct.121877",
+    "type": "conference",
+    "abstract": "This study introduces the novel application of a Multi-Task Gaussian Process (MTGP) model to predict biogas production and critical anaerobic digestion (AD) performance indicators (soluble COD, volatile fatty acids (VFAs)), addressing feedstock variability and dynamic process behavior. We compare the MTGP against the widely used mechanistic AM2 model to evaluate its accuracy and applicability for probabilistic modeling in AD systems. The MTGP framework leverages multi-output correlations and uncertainty quantification, trained on experimental data, achieving superior predictive performance over AM2in this study, with lower RMSE (SCOD: 0.32 g/L; VFAs: 0.87 mmol/L; biogas: 0.15 L/day) and higher R² values (SCOD:0.91, VFAs:0.94, biogas :0.88) under the conditions tested. While AM2 provides biochemical insights, its reliance on unvalidated assumptions may limits robustness. The flexibility of MTGP and precision suggest its potential for real-world applications such as Bayesian Optimization and Design of Experiments, enabling data-driven process enhancement without mechanistic constraints. This work establishes MTGP as a pioneering tool for AD optimization, bridging data-driven efficiency with practical bioenergy challenges."
+  },
+  {
+    "title": "Data-Driven Modeling, Order Reduction and Control of Anaerobic Digestion Processes",
+    "authors": ["Benaissa Dekhici"],
+    "venue": "University of Tlemcen",
+    "year": "2024",
+    "doi": "https://doi.org/10.13140/RG.2.2.27352.26883",
+    "type": "thesis",
+    "abstract": "This research delves into the realms of data-driven modeling, order reduction, and control strategies within the context of Anaerobic Digestion (AD) processes. The study is centered on addressing pivotal challenges in this domain and delivering innovative contributions to the field. The primary objectives encompass streamlining the complexity of the Anaerobic Digestion Model No.1 (ADM1) for the specific purpose of control, as well as the exploration of suitable data-driven techniques to achieve precise modeling and prediction of AD systems. Furthermore, the research endeavors to extract kinetics reactions from simulated time-series AD data, develop robust predictive models for Chemostat dynamics under both Monod and Haldane kinetics through data-driven methodologies, and employ the Koopman Operator theory to enable data-driven modeling and control of the Chemostat system, relying solely on substrate measurements. By adopting a data-driven approach, this research aims to provide profound insights into the intricacies of AD processes, thereby shedding light on their complex dynamics and advancing our comprehension beyond conventional models. It introduces an alternative modeling perspective exclusively grounded in data, augmenting our analytical capabilities within the realm of AD processes. The research rigorously evaluates and tests a variety of data-driven techniques, yielding intriguing results. Notably, the application of the Koopman Operator theory represents a significant contribution, particularly in scenarios where measurement resources are limited. This innovation holds the potential to pave the way for robust control strategies within AD systems, ultimately enhancing their sustainability and efficiency."
+  },
+  {
+    "title": "Data-Driven Control of the Chemostat Using the Koopman Operator Theory",
+    "authors": ["Benaissa Dekhici"],
+    "venue": "U.P.B. Sci. Bull., Series C",
+    "year": "2023",
+    "doi": "https://www.scientificbulletin.upb.ro/rev_docs_arhiva/rezec0_330715.pdf",
+    "type": "journal",
+    "abstract": "The chemostat is widely used as a laboratory pilot for bioprocess studies. Chemostat models are nonlinear and rarely used in modern control experiments. For a data-driven control strategy, we use the Koopman operator approach to derive a linear model for a simple chemostat with one substrate and one biomass, using only the chemostat's input-output data. For chemostat control, we use the linear Koopman model to develop a MPC controller. The linear Koopman model best fits chemostat data compared to the local linearization-based model. In addition, the MPC based on the Koopman model gives very satisfying results compard with a linear MPC controller when applied to control the chemostat. The results are gained for a large space of initial conditions when chemostat control is usually limited."
+  },
+  {
+    "title": "Modeling of biogas production from hydrothermal carbonization products in a continuous anaerobic digester",
+    "authors": ["Benaissa Dekhici"],
+    "venue": "ACM Trans. Model. Comput. Simul.",
+    "year": "2024",
+    "doi": "https://doi.org/10.1145/3680281",
+    "type": "journal",
+    "abstract": "The coupling between anaerobic digestion and hydrothermal carbonization (HTC) is a promising alternative for sustainable energy production. This study presents a dynamic model tailored for a lab-scale anaerobic digester operating on HTC products, specifically hydrochar and HTC liquor derived from sewage and agro-industrial digestate. Leveraging a modified version of the Anaerobic Model 2 (AM2), our simplified model of four states integrates pH and biomass decay rates into biomass kinetics. Simulation results of the mode were compared with experimental data collected over 164 days from the digester. The obtained results have proven the ability of the proposed model to predict the trend of the biogas production as well as important measured outputs of the bioreactor. The developed model could be used to control and optimize the performance of the digester, which provides potential for bioenergy production from waste streams such as digestate and digestate treated through the HTC process."
+  },
+  {
+    "title": "Data-Driven Determination of the Governing Equations of the Continuously Stirred Tank Reactor",
+    "authors": ["Benaissa Dekhici"],
+    "venue": "2023 10th ICEEE, Istanbul, Turkey",
+    "year": "2023",
+    "doi": "https://doi.org/10.1109/ICEEE59925.2023.00081",
+    "type": "conference",
+    "abstract": "This paper presents a data-driven approach for identifying the governing equations or ODEs of a continuously stirred tank reactor (CSTR) system. The paper employs the sparse identification of nonlinear dynamics (SINDy) algorithm, a popular and versatile method used for discovering nonlinear dynamical system models from data. The SINDy-PI (parallel, implicit) framework, a robust variation of the SINDy method, is used to find the implicit dynamics and rational nonlinearities of the CSTR for both Monod and Haldane types of specific growth rates. The simulation results demonstrate the accuracy of the method in inferring the ODEs of the CSTRs using limited and noisy data. The proposed method can be used to improve our understanding of complex systems and inform the design of control strategies."
+  },
+  {
+    "title": "Dynamic Mode Decomposition with Control for Data-driven Modeling of Anaerobic Digestion Process",
+    "authors": ["Benaissa Dekhici"],
+    "venue": "2022 16th African Conference on Research in Computer Science and Applied Mathematics (CARI), Tunis, Tunisia",
+    "year": "2022",
+    "doi": "https://hal.science/hal-03696038",
+    "type": "conference",
+    "abstract": "This paper proposes a data-driven modeling approach for complex Anaerobic Digestion (AD) systems. This method is called Dynamic Mode Decomposition with Control (DMDc), which is an emerging equation-free technique for deducing global linear state-space input-output models with actuation for complex systems. DMDc is applied to a set of data generated from simulating the Ordinary Differential Equations (ODEs) of the Anaerobic Model 2 (AM2) using MATLAB. The simulation results demonstrate the prediction accuracy of the linear state-space model generated from the DMDc algorithm."
+  },
+  {
+    "title": "Forecast of chemostat dynamics using data-driven approach",
+    "authors": ["Benaissa Dekhici"],
+    "venue": "2021 International Conference on Control, Automation and Diagnosis (ICCAD), Grenoble, France",
+    "year": "2021",
+    "doi": "https://doi.org/10.1109/iccad52417.2021.9638749",
+    "type": "conference",
+    "abstract": "This paper deals with the forecast of chemostat dynamics using a data-driven approach. We construct a data-driven model (predictor) based on the Koopman operator theory, which can predict the future state of the nonlinear dynamical system of the chemostat by only measuring the input and output of the system. We are presenting a predictor with a linear structure, that can be used for diagnostics, state estimation and future state prediction and control of nonlinear chemostat. Importantly, the method of generating such linear predictors is entirely data-driven and extremely simple, leading to nonlinear data transformation (embedding), and a linear least squares problem in the embedded space which can be readily solved for large data sets. We show in simulations that Koopman approach best predicts the system trajectories compared to a local linearization methods."
+  },
+  {
+    "title": "Model order reduction using Dynamic Mode Decomposition: Application to the Anaerobic Digestion Model N.1 (ADM1)",
+    "authors": ["Benaissa Dekhici"],
+    "venue": "2020 15th African Conference on Research in Computer Science and Applied Mathematics (CARI), Thiès, Senegal",
+    "year": "2020",
+    "doi": "https://hal.science/hal-02928872",
+    "type": "conference",
+    "abstract": "The Anaerobic Digestion Model No.1 (ADM1) is by far the most detailed model for the simulation and monitoring of Anaerobic Digestion (AD) processes. However, the ADM1 model is not dedicated for control purposes, due to its high dimension with 35 state variables. Dynamic Mode Decomposition (DMD) technique was applied to reduce the ADM1 order, using data generated from the Benchmark Simulation Model No. 2 (BSM2). The method allows to obtain a global linear model with only 7 state variables, which are coherent with dominant dynamics of the ADM1. We show in simulation that we can reconstruct original state variables of ADM1 model."
+  }
+],
+  "skills": {
+    "process_engineering": ["Bioenergy Systems", "Process Systems Engineering", "Anaerobic Digestion Processes", "AD and Biogas Expert"],
+    "data_science": ["Machine Learning", "Dynamic System Identification", "Data-Driven Approaches", "Model Order Reduction", "Control Systems", "Industrial Informatics", "Artificial Intelligence"],
+    "programming": ["Python (Advanced)", "MATLAB/Simulink (Advanced)", "C++ (Intermediate)"],
+    "languages": ["English (Fluent)", "French (Fluent)", "Arabic (Native)"]
+  },
+  "activities": [
+    {
+      "date": "6-9 July 2025",
+      "event": "35th European Symposium on Computer Aided Process Engineering (ESCAPE 35)",
+      "location": "Ghent, Belgium",
+      "type": "conference",
+      "description": "Attended conference and gave a presentation on \"Data-Driven Modelling of Biogas Production Using Multi-Task Gaussian Processes.\""
+    },
+    {
+      "date": "16-19 December 2024",
+      "event": "AI for Net Zero Conference",
+      "location": "University of Exeter",
+      "type": "conference",
+      "description": "Attended conference and gave a presentation on \"Data-Driven Modelling and Predictive Control of Biogas Production in an Anaerobic Digestion Process.\""
+    },
+    {
+      "date": "9-13 December 2024",
+      "event": "2024 Metabolic Modelling Workshop",
+      "location": "Nottingham",
+      "type": "workshop",
+      "description": "Attended workshop on metabolic modelling techniques."
+    },
+    {
+      "date": "2-6 September 2024",
+      "event": "2024 Summer School on Bayesian Optimization",
+      "location": "Imperial College London",
+      "type": "summer_school",
+      "description": "Attended summer school and presented a poster titled \"Data-Driven Modelling and Control of Biogas Production in a Simple Chemostat with Monod Kinetics\" at the PSE Research Day (Sept 6)."
+    },
+    {
+      "date": "2024",
+      "event": "AI for NetZero Webinars",
+      "location": "Online",
+      "type": "presentation",
+      "description": "Delivered a talk on \"Integrating Advanced Data-Driven Techniques in Bioenergy: Insights from Anaerobic Digestion Process Optimisation\". Available on YouTube (https://www.youtube.com/watch?v=Yr1E7mLXYcU&t=1676s)."
+    },
+    {
+      "date": "24-26 July 2024",
+      "event": "6th Annual EBNet Early Career Researcher Conference (ECR24)",
+      "location": "Newcastle University",
+      "type": "conference",
+      "description": "Successfully delivered an oral presentation."
+    },
+    {
+      "date": "8-10 May 2023",
+      "event": "2023 10th International Conference on Electrical and Electronics Engineering (ICEEE 2023)",
+      "location": "Istanbul, Turkey",
+      "type": "conference",
+      "description": "Successfully delivered an oral presentation."
+    },
+    {
+      "date": "2022",
+      "event": "16th African Conference on Research in Computer Science and Applied Mathematics (CARI)",
+      "location": "Tunis, Tunisia",
+      "type": "conference",
+      "description": "Participation in conference."
+    },
+    {
+      "date": "23 Nov 2022",
+      "event": "Online Professional English Network's (OPEN) 2022 English for Science, Technology, Engineering, and Mathematics (STEM) MOOC",
+      "location": "Online",
+      "type": "training",
+      "description": "Completed MOOC developed by the University of Pennsylvania and adapted by FHI 360."
+    },
+    {
+      "date": "2021",
+      "event": "IEEE International Conference on Control, Automation and Diagnosis (ICCAD)",
+      "location": "Grenoble, France",
+      "type": "conference",
+      "description": "Participation in conference."
+    },
+    {
+      "date": "29 Sept 2021",
+      "event": "IEEE Authorship and Open Access Symposium",
+      "location": "Online",
+      "type": "symposium",
+      "description": "Participation in symposium on \"How to publish Open Access with IEEE to increase the exposure and impact of your research\", organized by IEEE Xplore."
+    },
+    {
+      "date": "16 Sept 2021",
+      "event": "Research Presentation at University of Trento",
+      "location": "Trento, Italy",
+      "type": "presentation",
+      "description": "Presented a summary of research: \"Data-driven Modeling, Order Reduction and Control of the Anaerobic Digestion Process\"."
+    },
+    {
+      "date": "6-9 Apr 2021",
+      "event": "Spring School on Data-driven Model Learning of Dynamic Systems",
+      "location": "Ecole Central de Lyon, France (Virtual)",
+      "type": "spring_school",
+      "description": "Participation in spring school on data-driven model learning."
+    },
+    {
+      "date": "Jan 2021",
+      "event": "Webinaire commun entre le réseau TREASURE et le réseau REUSE d'INRAE",
+      "location": "Online",
+      "type": "webinar",
+      "description": "Participation in TREASURE webinar for treatment and Sustainable Reuse of Effluents in Semiarid Climates."
+    },
+    {
+      "date": "2020",
+      "event": "15th African Conference on Research in Computer Science and Applied Mathematics (CARI)",
+      "location": "Thiès, Senegal",
+      "type": "conference",
+      "description": "Participation in conference."
+    },
+    {
+      "date": "Jan 2019",
+      "event": "Annual PhD seminar, Laboratoire d'Automatique de Tlemcen",
+      "location": "Tlemcen, Algeria",
+      "type": "seminar",
+      "description": "Participation in annual PhD seminar."
+    },
+    {
+      "date": "28-29 April 2019",
+      "event": "Deep Learning Training",
+      "location": "Tlemcen, Algeria",
+      "type": "training",
+      "description": "Training in Deep Learning jointly organized by the University of Tlemcen and Rowan University, New Jersey, USA."
+    }
+  ],
+  "hobbies": {
+    "research": "Reading research articles, ML tools exploration, science books, chess",
+    "gaming": "Playing and watching football, video games across all consoles, triple-A games, Nintendo Switch gaming",
+    "technology": "Tech enthusiast (IT, electronics), DIY projects and electronics, 3D printing, Electronic chips and boards, Operating systems exploration"
+  }
+}
