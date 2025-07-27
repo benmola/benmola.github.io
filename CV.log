@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.8)  27 JUL 2025 15:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.8)  27 JUL 2025 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -848,34 +848,33 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip102
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 22.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 22.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 22
+Package hyperref Info: Option `breaklinks' set `true' on input line 24.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 24.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 24
 .
  (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-No file CV.aux.
+) (CV.aux)
 \openout1 = `CV.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count325
@@ -898,13 +897,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
  (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 22.
-Package microtype Info: Applying patch `item' on input line 22.
-Package microtype Info: Applying patch `toc' on input line 22.
-Package microtype Info: Applying patch `eqnum' on input line 22.
-Package microtype Info: Applying patch `footnote' on input line 22.
-Package microtype Info: Applying patch `verbatim' on input line 22.
-LaTeX Info: Redefining \microtypesetup on input line 22.
+LaTeX Info: Redefining \microtypecontext on input line 24.
+Package microtype Info: Applying patch `item' on input line 24.
+Package microtype Info: Applying patch `toc' on input line 24.
+Package microtype Info: Applying patch `eqnum' on input line 24.
+Package microtype Info: Applying patch `footnote' on input line 24.
+Package microtype Info: Applying patch `verbatim' on input line 24.
+LaTeX Info: Redefining \microtypesetup on input line 24.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -953,83 +952,86 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 24.
+(CV.out) (CV.out)
 \@outlinefile=\write4
 \openout4 = `CV.out'.
 
+\pagenumberwidth=\skip103
 \makecvheaddetailsbox=\box115
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-4.
+6.
+
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-4.
+6.
 
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-24.
+26.
 
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-24.
+26.
 
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 24.
+(Font)              <10> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 24.
+(Font)              <7> on input line 26.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 24.
+(Font)              <5> on input line 26.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 24.
+nput line 26.
 
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/fontawesome5\ufontawesomefree
 1.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 24.
+nput line 26.
 
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/fontawesome5\ufontawesomefree
 2.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
- input line 24.
+ input line 26.
 
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/fontawesome5\ufontawesomebran
 ds1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
-n input line 24.
+n input line 26.
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 24.
+ input line 26.
 
 (C:\Users\bd0022\AppData\Roaming\MiKTeX\tex/latex/fontawesome5\ufontawesomebran
 ds0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 24.
+n input line 26.
 \makecvheadpicturebox=\box116
-\makecvheaddetailswidth=\skip103
-\makecvheadpicturewidth=\skip104
+\makecvheaddetailswidth=\skip104
+\makecvheadpicturewidth=\skip105
 \makecvheadnamebox=\box117
 
-Overfull \hbox (66.0961pt too wide) in paragraph at lines 24--24
+Overfull \hbox (66.0961pt too wide) in paragraph at lines 26--26
 [][]\T1/lmr/m/n/34 (-20) Benaissa[] []Dekhici[]  
  []
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 26.
+(Font)              <10.95> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 26.
+(Font)              <8> on input line 28.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 26.
+(Font)              <6> on input line 28.
 [1
 
 {C:/Users/bd0022/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/bd0
@@ -1039,7 +1041,7 @@ Data/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free2.enc}{C:/Users/bd0022/
 AppData/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands1.enc}{C:/Users/bd
 0022/AppData/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{C:/Use
 rs/bd0022/AppData/Roaming/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free0.enc}]
-Overfull \hbox (0.99644pt too wide) in paragraph at lines 69--69
+Overfull \hbox (0.99644pt too wide) in paragraph at lines 71--71
  []|[]\T1/lmr/m/n/10.95 (-20) Programming[]|
  []
 
@@ -1048,25 +1050,15 @@ Overfull \hbox (0.99644pt too wide) in paragraph at lines 69--69
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `CV.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `CV.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  CFD9DDA70611CC627C9511902C12FFC5;630.
+Package rerunfilecheck Info: File `CV.out' has not changed.
+(rerunfilecheck)             Checksum: CFD9DDA70611CC627C9511902C12FFC5;630.
  ) 
 Here is how much of TeX's memory you used:
- 26711 strings out of 476357
- 513731 string characters out of 5793067
+ 26732 strings out of 476357
+ 514213 string characters out of 5793067
  1960496 words of memory out of 5000000
- 48254 multiletter control sequences out of 15000+600000
- 626329 words of font info for 130 fonts, out of 8000000 for 9000
+ 48265 multiletter control sequences out of 15000+600000
+ 630852 words of font info for 133 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  129i,13n,129p,1001b,470s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/bd0022/AppData/Roaming/MiKTeX/fonts/type1/public/fontawesome5/FontA
@@ -1080,10 +1072,10 @@ g/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/bd0022/AppData/Roaming/MiKTe
 X/fonts/type1/public/lm/lmri10.pfb><C:/Users/bd0022/AppData/Roaming/MiKTeX/font
 s/type1/public/lm/lmro10.pfb><C:/Users/bd0022/AppData/Roaming/MiKTeX/fonts/type
 1/public/lm/lmro17.pfb>
-Output written on CV.pdf (2 pages, 272982 bytes).
+Output written on CV.pdf (2 pages, 274419 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 500000)
- 36877 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 38973 words of extra memory for PDF output out of 42996 (max. 10000000)
 
