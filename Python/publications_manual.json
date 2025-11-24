@@ -5,7 +5,7 @@
     "publications": [
         {
             "title": "Data-Driven Modelling of Biogas Production Using Multi-Task Gaussian Processes",
-            "authors": "Benaissa Dekhici, Dongda Zhang, Ehecatl Antonio del Rio-Chanona",
+            "authors": "Benaissa Dekhici and Michael Short",
             "venue": "Proceedings of the 35th European Symposium on Computer Aided Process Engineering (ESCAPE 35)",
             "year": "2025",
             "abstract": "This study introduces the novel application of a Multi-Task Gaussian Process (MTGP) model to predict biogas production and critical anaerobic digestion (AD) performance indicators (soluble COD, volatile fatty acids (VFAs)), addressing feedstock variability and dynamic process behavior. We compare the MTGP against the widely used mechanistic AM2 model to evaluate its accuracy and applicability for probabilistic modeling in AD systems. The MTGP framework leverages multi-output correlations and uncertainty quantification, trained on experimental data, achieving superior predictive performance over AM2in this study, with lower RMSE (SCOD: 0.32 g/L; VFAs: 0.87 mmol/L; biogas: 0.15 L/day) and higher R² values (SCOD:0.91, VFAs:0.94, biogas :0.88) under the conditions tested. While AM2 provides biochemical insights, its reliance on unvalidated assumptions may limits robustness. The flexibility of MTGP and precision suggest its potential for real-world applications such as Bayesian Optimization and Design of Experiments, enabling data-driven process enhancement without mechanistic constraints. This work establishes MTGP as a pioneering tool for AD optimization, bridging data-driven efficiency with practical bioenergy challenges.",
