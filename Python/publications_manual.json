@@ -5,7 +5,7 @@
     "publications": [
         {
             "title": "Data-Driven Modelling of Biogas Production Using Multi-Task Gaussian Processes",
-            "authors": "Benaissa Dekhici and Michael Short",
+            "authors": "Benaissa Dekhici, Michael Short",
             "venue": "Proceedings of the 35th European Symposium on Computer Aided Process Engineering (ESCAPE 35)",
             "year": "2025",
             "abstract": "This study introduces the novel application of a Multi-Task Gaussian Process (MTGP) model to predict biogas production and critical anaerobic digestion (AD) performance indicators (soluble COD, volatile fatty acids (VFAs)), addressing feedstock variability and dynamic process behavior. We compare the MTGP against the widely used mechanistic AM2 model to evaluate its accuracy and applicability for probabilistic modeling in AD systems. The MTGP framework leverages multi-output correlations and uncertainty quantification, trained on experimental data, achieving superior predictive performance over AM2in this study, with lower RMSE (SCOD: 0.32 g/L; VFAs: 0.87 mmol/L; biogas: 0.15 L/day) and higher R² values (SCOD:0.91, VFAs:0.94, biogas :0.88) under the conditions tested. While AM2 provides biochemical insights, its reliance on unvalidated assumptions may limits robustness. The flexibility of MTGP and precision suggest its potential for real-world applications such as Bayesian Optimization and Design of Experiments, enabling data-driven process enhancement without mechanistic constraints. This work establishes MTGP as a pioneering tool for AD optimization, bridging data-driven efficiency with practical bioenergy challenges.",
@@ -32,7 +32,7 @@
         },
         {
             "title": "Modeling of biogas production from hydrothermal carbonization products in a continuous anaerobic digester",
-            "authors": "Benaissa Dekhici, Luca Fiori, Gianni Andreottola, Boumediene Benyahia",
+            "authors": "Benaissa Dekhici, Boumediene Benyahia, Brahim Cherki, Luca Fiori, Gianni Andreottola, ",
             "venue": "ACM Trans. Model. Comput. Simul.",
             "year": "2024",
             "abstract": "The coupling between anaerobic digestion and hydrothermal carbonization (HTC) is a promising alternative for sustainable energy production. This study presents a dynamic model tailored for a lab-scale anaerobic digester operating on HTC products, specifically hydrochar and HTC liquor derived from sewage and agro-industrial digestate. Leveraging a modified version of the Anaerobic Model 2 (AM2), our simplified model of four states integrates pH and biomass decay rates into biomass kinetics. Simulation results of the mode were compared with experimental data collected over 164 days from the digester. The obtained results have proven the ability of the proposed model to predict the trend of the biogas production as well as important measured outputs of the bioreactor. The developed model could be used to control and optimize the performance of the digester, which provides potential for bioenergy production from waste streams such as digestate and digestate treated through the HTC process.",
