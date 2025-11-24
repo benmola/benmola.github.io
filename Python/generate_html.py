@@ -56,7 +56,7 @@ class HTMLGenerator:
             <a href="{{ personal.social.orcid }}" target="_blank"><i class="ai ai-orcid"></i></a>
         </div>
         <div class="nav flex-column mb-3">
-            <a class="nav-link {% if page == 'home' %}active{% endif %}" href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a class="nav-link {% if page == 'home' %}active{% endif %}" href="index.html"><i class="fas fa-home"></i> Home</a>
             <a class="nav-link {% if page == 'publications' %}active{% endif %}" href="publications.html"><i class="fas fa-book"></i> Publications</a>
             <a class="nav-link {% if page == 'education' %}active{% endif %}" href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
             <a class="nav-link {% if page == 'experience' %}active{% endif %}" href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
@@ -332,7 +332,7 @@ class HTMLGenerator:
     def generate_all_pages(self) -> None:
         """Generate all HTML pages."""
         pages = {
-            'home.html': self.generate_home_page(),
+            'index.html': self.generate_home_page(),
             'education.html': self.generate_education_page(),
             'experience.html': self.generate_experience_page(),
             'projects.html': self.generate_projects_page(),
@@ -344,24 +344,6 @@ class HTMLGenerator:
             with open(filename, 'w', encoding='utf-8') as f:
                 f.write(content)
             print(f"Generated: {filename}")
-        
-        # Also update index.html to redirect to home.html
-        index_content = """<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=home.html">
-    <title>Redirecting...</title>
-</head>
-<body>
-    <p>Redirecting to <a href="home.html">home page</a>...</p>
-</body>
-</html>"""
-        
-        with open('index.html', 'w', encoding='utf-8') as f:
-            f.write(index_content)
-        print("Generated: index.html (redirect)")
 
 def main():
     """Main function to generate HTML pages."""
