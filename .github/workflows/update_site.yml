@@ -38,6 +38,12 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
 
+      - name: Fetch Publications from Google Scholar
+        run: |
+          cd Python
+          python fetch_publications.py
+        continue-on-error: true  # Don't fail the workflow if Scholar is unavailable
+
       - name: Generate HTML and CV
         run: |
           cd Python
@@ -64,5 +70,5 @@ jobs:
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "🤖 Auto-update Website and CV [skip ci]"
-          file_pattern: "*.html CV.pdf CV.tex"
+          commit_message: "🤖 Auto-update Website, CV, and Publications [skip ci]"
+          file_pattern: "*.html CV.pdf CV.tex Python/publications_data.json"
