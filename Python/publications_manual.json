@@ -1,0 +1,16 @@
+{
+    "note": "This is a manual backup of publications. Edit this file to add/update publications if the Google Scholar fetcher fails.",
+    "scholar_id": "ELEdK98AAAAJ",
+    "last_updated": "2025-01-24",
+    "publications": [
+        {
+            "title": "Data-Driven Modelling of Biogas Production Using Multi-Task Gaussian Processes",
+            "authors": "Benaissa Dekhici, Author 2, Author 3",
+            "venue": "Proceedings of the 35th European Symposium on Computer Aided Process Engineering (ESCAPE 35)",
+            "year": "2025",
+            "abstract": "This study introduces the novel application of a Multi-Task Gaussian Process (MTGP) model to predict biogas production and critical anaerobic digestion (AD) performance indicators...",
+            "url": "https://doi.org/10.69997/sct.121877",
+            "citations": 0
+        }
+    ]
+}

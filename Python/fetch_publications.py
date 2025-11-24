@@ -21,38 +21,74 @@ def fetch_scholar_publications(scholar_id: str) -> List[Dict[str, Any]]:
     """
     print(f"Fetching publications for scholar ID: {scholar_id}")
     
-    # Optional: Set up a proxy to avoid rate limiting
-    # pg = ProxyGenerator()
-    # pg.FreeProxies()
-    # scholarly.use_proxy(pg)
+    # Set up a proxy to avoid rate limiting
+    try:
+        print("Setting up proxy to avoid rate limiting...")
+        pg = ProxyGenerator()
+        pg.FreeProxies()
+        scholarly.use_proxy(pg)
+        print("✓ Proxy configured")
+    except Exception as e:
+        print(f"⚠ Warning: Could not set up proxy: {e}")
+        print("  Continuing without proxy...")
     
-    # Search for author
-    search_query = scholarly.search_author_id(scholar_id)
-    author = scholarly.fill(search_query)
-    
-    publications = []
-    
-    for pub in author['publications']:
-        # Fill publication details
-        filled_pub = scholarly.fill(pub)
+    try:
+        # Search for author
+        print("Searching for author...")
+        search_query = scholarly.search_author_id(scholar_id)
         
-        # Extract relevant information
-        pub_data = {
-            'title': filled_pub['bib'].get('title', ''),
-            'authors': filled_pub['bib'].get('author', ''),
-            'venue': filled_pub['bib'].get('venue', filled_pub['bib'].get('journal', '')),
-            'year': filled_pub['bib'].get('pub_year', ''),
-            'abstract': filled_pub['bib'].get('abstract', ''),
-            'url': filled_pub.get('pub_url', filled_pub.get('eprint_url', '')),
-            'citations': filled_pub.get('num_citations', 0)
-        }
+        print("Filling author details...")
+        author = scholarly.fill(search_query)
         
-        publications.append(pub_data)
-    
-    # Sort by year (newest first)
-    publications.sort(key=lambda x: int(x['year']) if x['year'] else 0, reverse=True)
-    
-    return publications
+        print(f"✓ Found author: {author.get('name', 'Unknown')}")
+        print(f"  Total publications: {len(author.get('publications', []))}")
+        
+        publications = []
+        
+        for i, pub in enumerate(author['publications'], 1):
+            try:
+                print(f"  Fetching publication {i}/{len(author['publications'])}...")
+                # Fill publication details
+                filled_pub = scholarly.fill(pub)
+                
+                # Extract relevant information
+                pub_data = {
+                    'title': filled_pub['bib'].get('title', ''),
+                    'authors': filled_pub['bib'].get('author', ''),
+                    'venue': filled_pub['bib'].get('venue', filled_pub['bib'].get('journal', '')),
+                    'year': filled_pub['bib'].get('pub_year', ''),
+                    'abstract': filled_pub['bib'].get('abstract', ''),
+                    'url': filled_pub.get('pub_url', filled_pub.get('eprint_url', '')),
+                    'citations': filled_pub.get('num_citations', 0)
+                }
+                
+                publications.append(pub_data)
+                print(f"    ✓ {pub_data['title'][:60]}...")
+                
+            except Exception as e:
+                print(f"    ⚠ Warning: Could not fetch publication {i}: {e}")
+                # Add basic info even if full details fail
+                pub_data = {
+                    'title': pub.get('bib', {}).get('title', 'Unknown'),
+                    'authors': pub.get('bib', {}).get('author', ''),
+                    'venue': pub.get('bib', {}).get('venue', ''),
+                    'year': pub.get('bib', {}).get('pub_year', ''),
+                    'abstract': '',
+                    'url': pub.get('pub_url', ''),
+                    'citations': pub.get('num_citations', 0)
+                }
+                publications.append(pub_data)
+        
+        # Sort by year (newest first)
+        publications.sort(key=lambda x: int(x['year']) if x['year'] else 0, reverse=True)
+        
+        return publications
+        
+    except Exception as e:
+        print(f"\n❌ Error fetching from Google Scholar: {e}")
+        print("\nThis is likely due to Google Scholar rate limiting.")
+        print("Please try again in a few minutes, or use the manual update method.")
+        raise
 
 
 def save_publications_to_json(publications: List[Dict[str, Any]], output_file: str = 'Python/publications_data.json'):
