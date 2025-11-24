@@ -1,0 +1,68 @@
+name: Update Website and CV
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - 'Python/**'
+      - 'CV.tex'
+      - 'cv-data.json'
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight
+  workflow_dispatch:      # Allow manual trigger
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: |
+          cd Python
+          pip install -r requirements.txt
+
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
+
+      - name: Generate HTML and CV
+        run: |
+          cd Python
+          python auto_update.py --force
+
+      - name: Move generated files to root
+        run: |
+          # Move HTML files if they were generated in Python dir
+          # (Based on analysis, they are generated in current working dir)
+          if ls Python/*.html 1> /dev/null 2>&1; then
+            mv Python/*.html .
+          fi
+          
+          # Move PDF if generated
+          if [ -f Python/CV.pdf ]; then
+            mv Python/CV.pdf .
+          fi
+          
+          # Move TeX if generated/updated
+          if [ -f Python/CV.tex ]; then
+            mv Python/CV.tex .
+          fi
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "🤖 Auto-update Website and CV [skip ci]"
+          file_pattern: "*.html CV.pdf CV.tex"

@@ -37,101 +37,8 @@ class HTMLGenerator:
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: #f6f8fa;
-        }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 22%;
-            height: 100vh;
-            background: linear-gradient(135deg, #42b883 0%, #3498db 100%);
-            color: #fff;
-            box-shadow: 0 2px 20px rgba(44,62,80,0.15);
-            padding: 2.5rem 1.5rem 2rem 1.5rem;
-            z-index: 1000;
-        }
-        .sidebar .avatar img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            margin-bottom: 1rem;
-            box-shadow: 0 2px 10px rgba(44,62,80,0.15);
-        }
-        .sidebar h3 {
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        .sidebar .text-muted {
-            color: #e0e0e0 !important;
-        }
-        .sidebar .social-icons a {
-            color: #fff;
-            margin: 0 0.4rem;
-            font-size: 1.4rem;
-            transition: color 0.2s;
-        }
-        .sidebar .social-icons a:hover {
-            color: #ffd700;
-        }
-        .sidebar .nav-link {
-            color: #fff;
-            font-weight: 500;
-            padding: 0.7rem 1rem;
-            border-radius: 0.5rem;
-            margin-bottom: 0.3rem;
-            transition: background 0.2s, color 0.2s;
-        }
-        .sidebar .nav-link.active, .sidebar .nav-link:hover {
-            background: #fff;
-            color: #3498db;
-        }
-        .sidebar .btn {
-            margin-top: 1.5rem;
-            border-radius: 2rem;
-            font-weight: 500;
-        }
-        .main-content {
-            margin-left: 22%;
-            padding: 3rem 2rem 2rem 2rem;
-            min-height: 100vh;
-        }
-        .section-title {
-            color: #3498db;
-            font-weight: 700;
-            border-left: 5px solid #42b883;
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-        }
-        .card {
-            border-radius: 1rem;
-            box-shadow: 0 2px 10px rgba(44,62,80,0.07);
-            margin-bottom: 2rem;
-        }
-        .card-body {
-            background: #fff;
-            border-radius: 1rem;
-        }
-        @media (max-width: 992px) {
-            .sidebar {
-                position: static;
-                width: 100%;
-                height: auto;
-                padding: 1.5rem 1rem;
-            }
-            .main-content {
-                margin-left: 0;
-                padding: 2rem 0.5rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="sidebar text-center">
@@ -149,17 +56,17 @@ class HTMLGenerator:
             <a href="{{ personal.social.orcid }}" target="_blank"><i class="ai ai-orcid"></i></a>
         </div>
         <div class="nav flex-column mb-3">
-            <a class="nav-link {% if page == 'home' %}active{% endif %}" href="home.html">Home</a>
-            <a class="nav-link {% if page == 'publications' %}active{% endif %}" href="publications.html">Publications</a>
-            <a class="nav-link {% if page == 'education' %}active{% endif %}" href="education.html">Education</a>
-            <a class="nav-link {% if page == 'experience' %}active{% endif %}" href="experience.html">Experience</a>
-            <a class="nav-link {% if page == 'projects' %}active{% endif %}" href="projects.html">Projects</a>
-            <a class="nav-link {% if page == 'skills' %}active{% endif %}" href="skills.html">Skills, Activities & Hobbies</a>
+            <a class="nav-link {% if page == 'home' %}active{% endif %}" href="home.html"><i class="fas fa-home"></i> Home</a>
+            <a class="nav-link {% if page == 'publications' %}active{% endif %}" href="publications.html"><i class="fas fa-book"></i> Publications</a>
+            <a class="nav-link {% if page == 'education' %}active{% endif %}" href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+            <a class="nav-link {% if page == 'experience' %}active{% endif %}" href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+            <a class="nav-link {% if page == 'projects' %}active{% endif %}" href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+            <a class="nav-link {% if page == 'skills' %}active{% endif %}" href="skills.html"><i class="fas fa-tools"></i> Skills & Hobbies</a>
         </div>
         <div class="mt-3">
-            <a href="mailto:{{ personal.contact.email_surrey }}" class="text-muted d-block"><i class="fas fa-envelope"></i> Surrey Email</a>
+            <a href="mailto:{{ personal.contact.email_surrey }}" class="text-muted d-block mb-2"><i class="fas fa-envelope"></i> Surrey Email</a>
             <a href="mailto:{{ personal.contact.email_tlemcen }}" class="text-muted d-block"><i class="fas fa-envelope"></i> UTL Email</a>
-            <a href="CV.pdf" class="btn btn-warning btn-lg w-100 mt-3 d-flex align-items-center justify-content-center" style="font-weight:700;font-size:1.2rem;box-shadow:0 4px 16px rgba(44,62,80,0.15);border-radius:2rem;gap:0.5rem;"><i class="fas fa-file-download"></i> Download CV</a>
+            <a href="CV.pdf" class="btn-download"><i class="fas fa-file-download"></i> Download CV</a>
         </div>
     </div>
     
