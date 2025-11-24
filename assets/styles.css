@@ -223,6 +223,7 @@ a:hover {
     border: none;
     border-radius: 16px;
     background: var(--bg-white);
+    color: var(--text-dark);
     box-shadow: var(--card-shadow);
     margin-bottom: 2rem;
     transition: all var(--transition-speed);
