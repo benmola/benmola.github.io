@@ -2,6 +2,9 @@
 jinja2>=3.0.0
 watchdog>=3.0.0
 
+# Publications fetching
+scholarly>=1.7.0
+
 # Optional dependencies for enhanced functionality
 python-dotenv>=1.0.0
 pyyaml>=6.0.0
