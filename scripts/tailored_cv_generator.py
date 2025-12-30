@@ -141,21 +141,22 @@ class TailoredCVGenerator:
         if not isinstance(text, str):
             return str(text)
         
-        replacements = {
-            '&': r'\&',
-            '%': r'\%',
-            '$': r'\$',
-            '#': r'\#',
-            '^': r'\textasciicircum{}',
-            '_': r'\_',
-            '{': r'\{',
-            '}': r'\}',
-            '~': r'\textasciitilde{}',
-            '\\': r'\textbackslash{}'
-        }
-        
+        # Order matters - use list to preserve order
         result = text
-        for char, replacement in replacements.items():
+        
+        replacements = [
+            ('&', r'\&'),
+            ('%', r'\%'),
+            ('$', r'\$'),
+            ('#', r'\#'),
+            ('_', r'\_'),
+            ('{', r'\{'),
+            ('}', r'\}'),
+            ('^', r'\^{}'),
+            ('~', r'\~{}'),
+        ]
+        
+        for char, replacement in replacements:
             result = result.replace(char, replacement)
         
         return result
@@ -239,12 +240,15 @@ class TailoredCVGenerator:
             
             # Add relevance indicator as a comment
             section += f"% Relevance score: {score:.2f}\n"
-            section += f"\\cventry{{{date_range}}}{{{position}}}{{{organization}}}{{{location}}}{{}}{{\\begin{{itemize}}"
             
-            for responsibility in exp['responsibilities']:
-                section += f"\\item {self.escape_latex(responsibility)}"
+            # Build responsibilities as line-separated text instead of itemize
+            responsibilities_text = ""
+            for i, responsibility in enumerate(exp['responsibilities']):
+                if i > 0:
+                    responsibilities_text += " \\newline "
+                responsibilities_text += f"\\textbullet\\ {self.escape_latex(responsibility)}"
             
-            section += "\\end{itemize}}\n"
+            section += f"\\cventry{{{date_range}}}{{{position}}}{{{organization}}}{{{location}}}{{}}{{{responsibilities_text}}}\n"
         
         return section
     
@@ -493,11 +497,20 @@ def main():
     elif args.interactive:
         job_description = get_interactive_job_description()
     else:
-        print("❌ Error: Please specify either --job-description or --interactive")
-        print("Usage examples:")
-        print("  python tailored_cv_generator.py --job-description job.txt")
-        print("  python tailored_cv_generator.py --interactive")
-        return
+        # Try to find job_description.txt in the project root
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        default_job_file = os.path.join(script_dir, "..", "job_description.txt")
+        if os.path.exists(default_job_file):
+            with open(default_job_file, 'r', encoding='utf-8') as f:
+                job_description = f.read()
+            print(f"📄 Using default job description: {default_job_file}")
+        else:
+            print("❌ Error: Please specify either --job-description or --interactive")
+            print("   Or create a job_description.txt in the project root folder")
+            print("Usage examples:")
+            print("  python tailored_cv_generator.py --job-description job.txt")
+            print("  python tailored_cv_generator.py --interactive")
+            return
     
     if not job_description.strip():
         print("❌ Error: Empty job description provided")
@@ -511,9 +524,15 @@ def main():
             data_file = os.path.join(script_dir, "..", "data", "cv_data.json")
         
         generator = TailoredCVGenerator(data_file=data_file)
+        
+        # Resolve output path - default to cv folder
+        output_file = args.output
+        if output_file == 'CV_tailored.tex' and not os.path.isabs(output_file):
+            output_file = os.path.join(script_dir, "..", "cv", output_file)
+        
         generator.save_tailored_cv(
             job_description=job_description,
-            output_file=args.output,
+            output_file=output_file,
             max_experience=args.max_experience,
             max_projects=args.max_projects
         )
@@ -532,30 +551,38 @@ def compile_pdf(tex_file: str) -> bool:
     try:
         import subprocess
         
-        print(f"\n📄 Compiling {tex_file} to PDF...")
+        # Get absolute path and directory
+        tex_file = os.path.abspath(tex_file)
+        tex_dir = os.path.dirname(tex_file)
+        tex_basename = os.path.basename(tex_file)
+        
+        print(f"\n📄 Compiling {tex_basename} to PDF...")
         
         # Run pdflatex twice for proper cross-references
         for i in range(2):
             result = subprocess.run(
-                ['pdflatex', '-interaction=nonstopmode', tex_file],
+                ['pdflatex', '-interaction=nonstopmode', tex_basename],
                 capture_output=True,
-                text=True
+                text=True,
+                cwd=tex_dir  # Change to the directory containing the .tex file
             )
             
             if result.returncode != 0:
                 print(f"❌ LaTeX compilation failed (attempt {i+1})")
+                print(result.stdout[-500:] if len(result.stdout) > 500 else result.stdout)
                 return False
         
         # Clean up auxiliary files
-        base_name = tex_file.replace('.tex', '')
+        base_name = os.path.splitext(tex_basename)[0]
         aux_extensions = ['.aux', '.log', '.out', '.fdb_latexmk', '.fls']
         
         for ext in aux_extensions:
-            aux_file = base_name + ext
+            aux_file = os.path.join(tex_dir, base_name + ext)
             if os.path.exists(aux_file):
                 os.remove(aux_file)
         
-        print(f"✅ PDF compiled successfully: {base_name}.pdf")
+        pdf_path = os.path.join(tex_dir, base_name + ".pdf")
+        print(f"✅ PDF compiled successfully: {pdf_path}")
         return True
         
     except FileNotFoundError:

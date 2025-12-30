@@ -34,21 +34,24 @@ class CVLatexGenerator:
         if not isinstance(text, str):
             return str(text)
         
-        replacements = {
-            '&': r'\&',
-            '%': r'\%',
-            '$': r'\$',
-            '#': r'\#',
-            '^': r'\textasciicircum{}',
-            '_': r'\_',
-            '{': r'\{',
-            '}': r'\}',
-            '~': r'\textasciitilde{}',
-            '\\': r'\textbackslash{}'
-        }
-        
+        # Order matters: escape backslash first, then other chars
         result = text
-        for char, replacement in replacements.items():
+        # Don't escape backslashes that are already part of the text
+        # as they're usually intentional
+        
+        replacements = [
+            ('&', r'\&'),
+            ('%', r'\%'),
+            ('$', r'\$'),
+            ('#', r'\#'),
+            ('_', r'\_'),
+            ('{', r'\{'),
+            ('}', r'\}'),
+            ('^', r'\^{}'),
+            ('~', r'\~{}'),
+        ]
+        
+        for char, replacement in replacements:
             result = result.replace(char, replacement)
         
         return result
@@ -114,12 +117,14 @@ class CVLatexGenerator:
             organization = self.escape_latex(exp['organization'])
             location = self.escape_latex(exp['location'])
             
-            section += f"\\cventry{{{date_range}}}{{{position}}}{{{organization}}}{{{location}}}{{}}{{\\begin{{itemize}}"
+            # Build responsibilities as line-separated text instead of itemize
+            responsibilities_text = ""
+            for i, responsibility in enumerate(exp['responsibilities']):
+                if i > 0:
+                    responsibilities_text += " \\newline "
+                responsibilities_text += f"\\textbullet\\ {self.escape_latex(responsibility)}"
             
-            for responsibility in exp['responsibilities']:
-                section += f"\\item {self.escape_latex(responsibility)}"
-            
-            section += "\\end{itemize}}\n"
+            section += f"\\cventry{{{date_range}}}{{{position}}}{{{organization}}}{{{location}}}{{}}{{{responsibilities_text}}}\n"
         
         return section
     
@@ -133,25 +138,25 @@ class CVLatexGenerator:
             institution = self.escape_latex(edu['institution'])
             location = self.escape_latex(edu['location'])
             
-            section += f"\\cventry{{{date_range}}}{{{degree}}}{{{institution}}}{{{location}}}{{}}{{\\n"
+            section += f"\\cventry{{{date_range}}}{{{degree}}}{{{institution}}}{{{location}}}{{}}{{"
             
             if 'thesis' in edu:
                 thesis = self.escape_latex(edu['thesis'])
-                section += f"\\textbf{{Thesis:}} ``{thesis}''\\\\\\n"
+                section += f"\\textbf{{Thesis:}} ``{thesis}''\\\\ "
             
             if 'supervisors' in edu:
                 supervisors = " \\& ".join([self.escape_latex(sup) for sup in edu['supervisors']])
-                section += f"\\textbf{{Supervisors:}} {supervisors}\\\\\\n"
+                section += f"\\textbf{{Supervisors:}} {supervisors}\\\\ "
             
             if 'co_direction' in edu:
                 co_direction = self.escape_latex(edu['co_direction'])
-                section += f"\\textbf{{Co-direction:}} {co_direction}\\\\\\n"
+                section += f"\\textbf{{Co-direction:}} {co_direction}\\\\ "
             
             if 'mobility' in edu:
-                section += "\\textbf{International Mobility:}\\n\\begin{itemize}\\n"
+                section += "\\textbf{International Mobility:} \\begin{itemize} "
                 for mobility in edu['mobility']:
-                    section += f"\\item {self.escape_latex(mobility)}\\n"
-                section += "\\end{itemize}\\n"
+                    section += f"\\item {self.escape_latex(mobility)} "
+                section += "\\end{itemize} "
             
             section += "}\n"
         
@@ -167,7 +172,7 @@ class CVLatexGenerator:
             organization = self.escape_latex(project['organization'])
             description = self.escape_latex(project['description'])
             
-            section += f"\\cventry{{{date_range}}}{{{title}}}{{{organization}}}{{}}{{}}{{\\n{description}\\n}}\\n"
+            section += f"\\cventry{{{date_range}}}{{{title}}}{{{organization}}}{{}}{{}}{{{description}}}\n"
         
         return section
     
@@ -190,7 +195,7 @@ class CVLatexGenerator:
         
         for category, items in hobbies.items():
             category_title = category.replace('_', ' ').title()
-            section += f"\\cvitem{{{category_title}: }}{{{self.escape_latex(items)}}}\\n"
+            section += f"\\cvitem{{{category_title}: }}{{{self.escape_latex(items)}}}\n"
         
         return section
     
