@@ -1,8 +1,26 @@
 {
     "note": "Manual publications list - Edit this file to add/update publications",
     "scholar_id": "ELEdK98AAAAJ",
-    "last_updated": "2025-01-24",
+    "last_updated": "2025-12-30",
     "publications": [
+        {
+            "title": "Anaerobic digestion site-wide optimisation and decision-making: An industrial perspective and review",
+            "authors": "Rohit Murali, Angela Bywater, Meshkat Dolat, Benaissa Dekhici, Mohammadamin Zarei, Lauren Hilton, Jhuma Sadhukhan, Dongda Zhang, Michael Short",
+            "venue": "Renewable and Sustainable Energy Reviews",
+            "year": "2026",
+            "abstract": "Anaerobic digestion (AD) is a renewable energy technology for energy recovery via biogas production, providing a route for a circular economy via waste valorisation. Currently, AD systems are largely operated conservatively based on experience from operators, due to the challenges behind predicting system responses to changing feedstocks. This study leverages insights and reflections from a workshop with industry professionals on the necessity for more reliable decision-making tools to assist operators and examines the incorporation of advanced methods for real-time decision-support for AD systems.",
+            "url": "https://doi.org/10.1016/j.rser.2025.116402",
+            "citations": 0
+        },
+        {
+            "title": "Mechanistic and Data-Driven Models for Predicting Biogas Production in Anaerobic Digestion Processes",
+            "authors": "Rohit Murali, Benaissa Dekhici, Tao Chen, Dongda Zhang, Michael Short",
+            "venue": "Systems & Control Transactions",
+            "year": "2025",
+            "abstract": "Accurately predicting biogas production for real-time applications remains a challenge in anaerobic digestion (AD) due to the process's complexity and dynamic nature. This study compares mechanistic and data-driven models for biogas prediction using lab-scale data. A state estimation framework with Haldane kinetics achieved R² = 0.91, while a Long Short-Term Memory (LSTM) model with Bayesian Optimisation showed superior performance (R² = 0.93–0.98). The LSTM model was further applied to industrial data, maintaining high accuracy (R² = 0.95–0.97) and demonstrating its scalability.",
+            "url": "https://psecommunity.org/LAPSE:2025.0213",
+            "citations": 0
+        },
         {
             "title": "Data-Driven Modelling of Biogas Production Using Multi-Task Gaussian Processes",
             "authors": "Benaissa Dekhici, Michael Short",

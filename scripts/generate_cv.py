@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 CV LaTeX Generator
-Generates CV.tex from cv-data.json
+Generates CV.tex from cv_data.json
 """
 
 import json
@@ -10,7 +10,7 @@ from datetime import datetime
 from typing import Dict, List, Any
 
 class CVLatexGenerator:
-    def __init__(self, data_file: str = "cv-data.json"):
+    def __init__(self, data_file: str = "cv_data.json"):
         """Initialize the generator with data file."""
         self.data_file = data_file
         self.data = self.load_data()
