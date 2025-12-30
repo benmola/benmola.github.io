@@ -225,17 +225,28 @@ class CVLatexGenerator:
         
         print(f"CV.tex generated successfully: {output_file}")
     
-    def compile_pdf(self, tex_file: str = "CV.tex") -> bool:
+    def compile_pdf(self, tex_file: str = None) -> bool:
         """Compile LaTeX to PDF using pdflatex."""
         try:
             import subprocess
             
+            # Default to CV.tex in the cv folder
+            if tex_file is None:
+                script_dir = os.path.dirname(os.path.abspath(__file__))
+                tex_file = os.path.join(script_dir, "..", "cv", "CV.tex")
+            
+            # Get absolute path and directory
+            tex_file = os.path.abspath(tex_file)
+            tex_dir = os.path.dirname(tex_file)
+            tex_basename = os.path.basename(tex_file)
+            
             # Run pdflatex twice for proper cross-references
             for i in range(2):
                 result = subprocess.run(
-                    ['pdflatex', '-interaction=nonstopmode', tex_file],
+                    ['pdflatex', '-interaction=nonstopmode', tex_basename],
                     capture_output=True,
-                    text=True
+                    text=True,
+                    cwd=tex_dir  # Change to the directory containing the .tex file
                 )
                 
                 if result.returncode != 0:
@@ -245,15 +256,16 @@ class CVLatexGenerator:
                     return False
             
             # Clean up auxiliary files
-            base_name = tex_file.replace('.tex', '')
+            base_name = os.path.splitext(tex_basename)[0]
             aux_extensions = ['.aux', '.log', '.out', '.fdb_latexmk', '.fls']
             
             for ext in aux_extensions:
-                aux_file = base_name + ext
+                aux_file = os.path.join(tex_dir, base_name + ext)
                 if os.path.exists(aux_file):
                     os.remove(aux_file)
             
-            print(f"PDF compiled successfully: {base_name}.pdf")
+            pdf_path = os.path.join(tex_dir, base_name + ".pdf")
+            print(f"PDF compiled successfully: {pdf_path}")
             return True
             
         except FileNotFoundError:
