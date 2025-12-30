@@ -1,0 +1,51 @@
+Company Overview:
+
+We're working with a well-funded early-stage BioAI company applying machine learning to a challenging biological problem with real impact on sustainability and food security.
+
+The team is building an ML-first research platform where models are developed, validated, and actively used by scientists to guide real experimental decisions.
+
+The Role:
+
+They are looking for a Research Engineer who will work closely with ML scientists, chemists, and biologists to design, implement, and evaluate new modelling approaches. Your focus will be on building models, running experiments, validating results, and ensuring that research code is robust and reproducible.
+
+This role suits someone who enjoys hands-on model development and wants their work to directly influence scientific discovery, while still caring deeply about code quality and collaboration.
+
+What you'll do:
+
+Develop and evaluate machine learning models, including generative and predictive approaches.
+Implement and adapt ideas from recent research papers into working models and experiments.
+Design and run experiments, analyse results, and validate findings with scientific rigour.
+Build high-quality research software that is maintainable, tested, and usable by scientists across the company.
+Collaborate closely with chemists and biologists to understand their workflows and translate scientific questions into ML solutions.
+Support internal users by gathering feedback, troubleshooting issues, and improving tools based on real research needs.
+Communicate results through internal reports, technical documentation, and external publications or conferences.
+Contribute to shared codebases, review code, and help define best practices for research-oriented software development.
+
+What you will bring:
+
+Strong background in machine learning, computer science, applied mathematics, or a related field (PhD, MSc, or equivalent experience).
+Experience developing ML models in a research or applied research environment.
+Proficiency in Python and PyTorch, with solid software engineering fundamentals.
+Experience working with research codebases, including extending or refactoring academic implementations.
+Ability to design experiments, evaluate results critically, and communicate findings clearly.
+Comfortable working in interdisciplinary teams and collaborating closely with scientists from different backgrounds.
+A proactive mindset and a genuine interest in applying ML to real scientific problems.
+
+Nice to have:
+
+Experience scaling or optimising training, evaluation, or inference workflows for ML models.
+Familiarity with experiment tracking or research tooling such as Weights & Biases or MLflow.
+Exposure to molecular modelling, cheminformatics, or bioinformatics tools such as RDKit, OpenMM, GROMACS, or PyRosetta.
+Some experience with cloud environments or GPU-based compute, without this being a core focus.
+Interest in applied ML for scientific research and working closely with researchers to turn promising ideas into usable tools.
+
+Why join:
+
+Competitive salary and meaningful equity.
+Fully remote work.
+Support for publications, conferences, and patent applications.
+The chance to shape the research and technical direction of an early-stage company.
+Direct impact on food security and environmental sustainability.
+A culture built around curiosity, rigour, ownership, and close collaboration between science and engineering.
+
+Keywords: Research Engineer, Machine Learning Engineer, ML Research Engineer, ML Software Engineer, AI Research Engineer, PyTorch, Python, Research Software Engineer

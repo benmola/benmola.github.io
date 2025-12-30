@@ -10,8 +10,12 @@ from datetime import datetime
 from typing import Dict, List, Any
 
 class CVLatexGenerator:
-    def __init__(self, data_file: str = "cv_data.json"):
+    def __init__(self, data_file: str = None):
         """Initialize the generator with data file."""
+        if data_file is None:
+            # Default to data folder relative to script location
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            data_file = os.path.join(script_dir, "..", "data", "cv_data.json")
         self.data_file = data_file
         self.data = self.load_data()
     
@@ -208,8 +212,12 @@ class CVLatexGenerator:
         
         return latex_content
     
-    def save_latex(self, output_file: str = "CV.tex") -> None:
+    def save_latex(self, output_file: str = None) -> None:
         """Save generated LaTeX to file."""
+        if output_file is None:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            output_file = os.path.join(script_dir, "..", "cv", "CV.tex")
+        
         latex_content = self.generate_latex()
         
         with open(output_file, 'w', encoding='utf-8') as f:

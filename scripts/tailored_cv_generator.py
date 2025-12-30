@@ -456,8 +456,8 @@ def main():
     parser.add_argument(
         '--data', '-d',
         type=str,
-        default='cv_data.json',
-        help='Path to CV data JSON file (default: cv_data.json)'
+        default=None,
+        help='Path to CV data JSON file (default: ../data/cv_data.json relative to script)'
     )
     parser.add_argument(
         '--max-experience',
@@ -504,7 +504,13 @@ def main():
         return
     
     try:
-        generator = TailoredCVGenerator(data_file=args.data)
+        # Resolve data file path
+        data_file = args.data
+        if data_file is None:
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            data_file = os.path.join(script_dir, "..", "data", "cv_data.json")
+        
+        generator = TailoredCVGenerator(data_file=data_file)
         generator.save_tailored_cv(
             job_description=job_description,
             output_file=args.output,
